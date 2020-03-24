@@ -7,6 +7,8 @@
 
 a {
     text-decoration: none;
+    padding: .3em;
+
 }
 
 a:visited {
@@ -20,20 +22,24 @@ li {
 :root {
     --blue: #272F3C;
     --blue-o: rgba(39, 47, 60, .8);
+    --darkblue: #12151a;
 }
 
 body {
 
 }
 
+#monitor_image {
+    display: none;
+}
+
 .wrapper {
     background-image: url("https://i.imgur.com/NWuJMrl.jpg");
     background-attachment: fixed;
-    /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
 
-    height: 2000px;
+    height: 1400px;
     
 }
 
@@ -50,6 +56,7 @@ header {
     top: 0;
     z-index: 3;
 
+    width: 100%;
     
 }
 
@@ -68,7 +75,7 @@ h1 {
 main {
     z-index: 2;
     position: relative;
-    top: 40vh;
+    top: 20vh;
 }
 
 main p {
@@ -76,6 +83,22 @@ main p {
     padding: .5em;
     background: var(--blue-o);
     color: white;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    text-align: justify;
+}
+
+button {
+    background: var(--darkblue);
+    color: white;
+    box-shadow: 1px 1px 5px black;
+    margin-top: 5em;
+    border: none;
+    font-size: 1.5em;
+    width: 100%;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    
 }
 
 footer {
